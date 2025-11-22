@@ -1,16 +1,157 @@
-# React + Vite
+# 📊 Patient Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single-page patient dashboard built for a client
+project.\
+The UI is based on a provided Adobe XD design and populated using mock
+API data to simulate real patient records.
 
-Currently, two official plugins are available:
+This project demonstrates clean component architecture, responsive
+layout design, and dynamic data visualization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+------------------------------------------------------------------------
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔹 Adobe XD → React Conversion
 
-## Expanding the ESLint configuration
+The design provided by the client was fully reproduced using:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   React + Vite
+-   Modular, reusable components
+-   Clean and semantic HTML
+-   A fully responsive 3-column layout
+
+### 🔹 Mock Patient Data Integration
+
+The dashboard uses a mock API endpoint to supply:
+
+-   Patient list\
+-   Blood pressure history\
+-   Temperature, heart rate, respiratory values\
+-   Diagnostic history\
+-   Lab results\
+-   Profile information\
+-   Insurance & contact details
+
+The data is fetched on load and injected directly into the UI.
+
+### 🔹 Interactive Blood Pressure Chart
+
+The "Diagnosis History" section includes a dynamic line chart created
+with:
+
+-   **Chart.js**
+-   **react-chartjs-2**
+
+It visualizes mock systolic and diastolic values across multiple months,
+matching the design.
+
+### 🔹 Single-Page Responsive Layout
+
+The entire interface is a single page with flexible responsiveness:
+
+-   Large displays → 3-column layout (patients list, main content,
+    profile panel)
+-   Medium displays → auto-adjusting structure
+-   Small displays → sidebar collapses, content stacks vertically
+
+All non-essential UI interactions (search bar, dropdown menus, ellipsis
+buttons) are intentionally non-functional and used for visual
+completeness.
+
+------------------------------------------------------------------------
+
+## 🧩 Project Structure
+
+    patient-dashboard/
+    ├── public/
+    ├── src/
+    │   ├── api.js
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   ├── index.css
+    │   └── components/
+    │       ├── Layout.jsx
+    │       ├── TopBar.jsx
+    │       ├── PatientsSidebar.jsx
+    │       ├── DiagnosisHistory.jsx
+    │       ├── BloodPressureChart.jsx
+    │       ├── VitalsCards.jsx
+    │       ├── DiagnosticList.jsx
+    │       ├── ProfilePanel.jsx
+    │       └── LabResults.jsx
+    └── package.json
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+``` bash
+git clone https://github.com/YOUR_USERNAME/patient-dashboard.git
+cd patient-dashboard
+```
+
+### 2. Install dependencies
+
+``` bash
+npm install
+```
+
+### 3. Start development server
+
+``` bash
+npm run dev
+```
+
+App will be available at:
+
+    http://localhost:5173
+
+### 4. Build for production
+
+``` bash
+npm run build
+```
+
+Production-ready files appear in:
+
+    /dist
+
+------------------------------------------------------------------------
+
+## 🧰 Tech Stack
+
+  Technology                   Purpose
+  ---------------------------- ------------------------
+  React (Vite)                 Component-driven UI
+  Chart.js + react-chartjs-2   Data visualization
+  HTML5 / CSS3                 Layout & styling
+  JavaScript (ES6+)            App logic
+  Mock REST API                Simulated patient data
+
+------------------------------------------------------------------------
+
+## 📌 Notes
+
+-   All patient information is **mock data** and not associated with
+    real individuals.
+-   This project was completed as part of a **client request** requiring
+    conversion of a provided design into a fully responsive web
+    dashboard.
+-   No real medical data is used.
+
+------------------------------------------------------------------------
+
+## 📷 Screenshot
+
+![Dashboard
+Preview](https://github.com/YSayaovong/Patient-Dashboard/blob/main/assets/jessica_taylor.png)
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+This project is provided for demonstration and client work purposes
+only.
