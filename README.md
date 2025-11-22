@@ -123,13 +123,14 @@ Production-ready files appear in:
 
 ## 🧰 Tech Stack
 
-  Technology                   Purpose
-  ---------------------------- ------------------------
-  React (Vite)                 Component-driven UI
-  Chart.js + react-chartjs-2   Data visualization
-  HTML5 / CSS3                 Layout & styling
-  JavaScript (ES6+)            App logic
-  Mock REST API                Simulated patient data
+| Technology              | Purpose                |
+|------------------------|------------------------|
+| React (Vite)           | Component-driven UI    |
+| Chart.js + react-chartjs-2 | Data visualization |
+| HTML5 / CSS3           | Layout & styling       |
+| JavaScript (ES6+)      | App logic              |
+| Mock REST API          | Simulated patient data |
+
 
 ------------------------------------------------------------------------
 
